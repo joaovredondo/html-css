@@ -38,18 +38,20 @@ a.externo::after {
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     min-height: 150px;
+    margin: auto;
     text-align: center;
     padding-top: 20px;
 }
 
-header > h1 {
+header>h1 {
     color: white;
     font-family: var(--fonte-destaque);
     margin-bottom: 20px;
     font-size: 3em;
+    font-weight: normal;
 }
 
-header > p {
+header>p {
     font-family: var(--fonte-padrao);
     font-size: 1.2em;
     color: white;
@@ -57,6 +59,7 @@ header > p {
     padding-right: 10px;
     padding-left: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
 }
 
 
@@ -67,16 +70,16 @@ nav {
     font-size: 1.3em;
 }
 
-nav > a {
-    color: white;
-    padding: 10px;
+nav>a {
+    color: var(--cor1);
+    padding: 4px;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
     transition-duration: .5s;
 }
 
-nav > a:hover {
+nav>a:hover {
     background-color: var(--cor1);
     color: var(--cor5);
 }
@@ -98,7 +101,7 @@ main p {
     text-align: justify;
     text-indent: 30px;
     line-height: 1.4em;
-    font-size: 1.1em    ;
+    font-size: 1.1em;
 }
 
 main strong {
@@ -109,6 +112,19 @@ main strong {
 main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 5px;
+    border-radius: 2px;
+    text-indent: 6px;
+    font-weight: normal;
 }
 
 main a {
@@ -124,16 +140,6 @@ main a:hover {
     color: var(--cor4);
 }
 
-main h2 {
-    font-family: var(--fonte-android);
-    color: var(--cor4);
-    font-size: 1.3em;
-    background-image: linear-gradient(to right, var(--cor1), transparent);
-    padding: 5px;
-    border-radius: 2px;
-    text-indent: 6px;
-}
-
 main img {
     width: 100%;
 }
@@ -144,6 +150,22 @@ main img.pequena {
     margin: auto;
 }
 
+.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 35%;
+    position: relative;
+}
+
+.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 aside {
     background-color: var(--cor1);
     padding: 10px;
@@ -151,7 +173,7 @@ aside {
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
-aside > h3 {
+aside>h3 {
     background-color: var(--cor4);
     color: white;
     padding: 10px;
@@ -159,7 +181,7 @@ aside > h3 {
     border-radius: 10px 10px 0px 0px;
 }
 
-aside > ul {
+aside>ul {
     list-style-type: '\2714\00A0';
     list-style-position: inside;
     columns: 2;
